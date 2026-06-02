@@ -7,9 +7,16 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 import PricingSection from "@/components/landing/PricingSection";
+import {currentUser} from "@clerk/nextjs/server";
+import {redirect} from "next/navigation";
 
-export default function Home() {
-  return (
+export default async function Home() {
+    console.log("Database URL:", process.env.DATABASE_URL);
+    const user = await currentUser();
+
+  if(user) redirect("/dashboard");
+
+    return (
    <div className="min-h-screen bg-black">
        <Header />
        <Hero />
