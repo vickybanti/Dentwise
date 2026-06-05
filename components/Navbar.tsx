@@ -4,7 +4,7 @@ import {UserButton, useUser} from "@clerk/nextjs";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import {CalendarIcon, CrownIcon, HomeIcon} from "lucide-react";
+import {CalendarIcon, CrownIcon, HomeIcon, MicIcon, SubscriptIcon} from "lucide-react";
 
 const Navbar = () => {
     const {user} = useUser();
@@ -44,15 +44,27 @@ const Navbar = () => {
                     </Link>
                 </div>
 
+                    <div className="flex items-center gap-6">
+                        <Link href="/voice"
+                              className={`flex items-center gap=2 transition-colors ${
+                                  pathname === "/dashboard" ? "text-white/90 hover:text-white/40 font-medium"
+                                      : "text-white/40 hover:text-white/70"
+                              }`}
+                        >
+                            <MicIcon className="w-4 h-4"/>
+                            <span className="hidden md:inline pl-2">Voice</span>
+                        </Link>
+                    </div>
+
                 <div className="flex items-center gap-6">
-                    <Link href="/voice"
+                    <Link href="/pro"
                           className={`flex items-center gap=2 transition-colors ${
                               pathname === "/dashboard" ? "text-white/90 hover:text-white/40 font-medium"
                                   : "text-white/40 hover:text-white/70"
                           }`}
                     >
                         <CrownIcon className="w-4 h-4"/>
-                        <span className="hidden md:inline pl-2">Voice</span>
+                        <span className="hidden md:inline pl-2">Pro</span>
                     </Link>
                 </div>
             </div>
