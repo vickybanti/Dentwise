@@ -1,7 +1,7 @@
 "use client"
 
 import {useMutation, useQuery, useQueryClient} from "@tanstack/react-query";
-import {createDoctor, getDoctors, updateDoctor} from "@/lib/actions/doctors";
+import {createDoctor, getAvailableDoctors, getDoctors, updateDoctor} from "@/lib/actions/doctors";
 
 export function useDoctors() {
     const result = useQuery({
@@ -37,4 +37,13 @@ export function useUpdateDoctor() {
         onError:()=>console.log("Doctor already created"),
     })
     return mutation;
+}
+
+export function useAvailableDoctors() {
+    const result = useQuery({
+        queryKey: ["getAvailableDoctors"],
+        queryFn: getAvailableDoctors,
+    });
+
+    return result;
 }

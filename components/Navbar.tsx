@@ -33,7 +33,7 @@ const Navbar = () => {
                     </div>
 
                 <div className="flex items-center gap-6">
-                    <Link href="/dashboard/appointments"
+                    <Link href="/appointments"
                           className={`flex items-center gap=2 transition-colors ${
                               pathname === "/dashboard" ? "text-white/90 hover:text-white/40 font-medium"
                                   : "text-white/40 hover:text-white/70"

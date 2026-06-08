@@ -9,7 +9,7 @@ const Dashboard = () => {
         <>
         <Navbar />
 
-        <div className="max-w-7xl mx-auto px-6 py-8 pt-2">
+        <div className="max-w-7xl mx-auto px-6 py-8 pt-2 mt-20">
             <WelcomeSection />
             <MainActions />
             <ActivityOverview />
