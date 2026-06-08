@@ -9,11 +9,12 @@ import Footer from "@/components/landing/Footer";
 import PricingSection from "@/components/landing/PricingSection";
 import {currentUser} from "@clerk/nextjs/server";
 import {redirect} from "next/navigation";
+import syncUser from "@/lib/actions/user";
 
 export default async function Home() {
-    console.log("Database URL:", process.env.DATABASE_URL);
     const user = await currentUser();
 
+    await syncUser()
   if(user) redirect("/dashboard");
 
     return (
