@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function WhatToAsk() {
     return (
-        <section className="relative py-32 px-6 overflow-hidden bg-gradient-to-b from-background to-muted/20">
-            <div className="relative z-10 max-w-7xl mx-auto">
+        <section className="relative py-32 px-6 overflow-hidden bg-gradient-to-b from-background to-muted/20 max-w-7xl mx-auto">
+            <div>
                 {/* Header */}
                 <div className="text-center mb-20">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/5 to-primary/10 rounded-full border border-primary/10 backdrop-blur-sm mb-6">
@@ -20,13 +20,13 @@ function WhatToAsk() {
               anything dental
             </span>
                     </h2>
-                    <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-black/80 max-w-3xl mx-auto leading-relaxed">
                         From simple questions to complex concerns, our AI delivers expert-level guidance trained
                         on thousands of real dental cases
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-start">
+                <div className="grid lg:grid-cols-2 gap-16 items-start mx-20">
                     {/* Left Side - Interactive Chat Examples */}
                     <div className="space-y-8">
                         <div className="space-y-6">

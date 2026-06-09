@@ -29,7 +29,7 @@ function PricingSection() {
               AI dental plan
             </span>
                     </h2>
-                    <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-white/65 max-w-3xl mx-auto bg-gradient-to-r from-primary/10 to-primary/40">
                         Book appointments for free and upgrade for unlimited AI consultations. Perfect for
                         ongoing dental care.
                     </p>
@@ -40,7 +40,7 @@ function PricingSection() {
                     {/* Free Plan */}
                     <div className="relative group">
                         <div className="relative bg-[#010207] from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-[#161311] hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
-                            <div className="space-y-6 text-white/50">
+                            <div className="space-y-6 text-white/70">
                                 <div className="space-y-3">
                                     <h3 className="text-2xl font-bold">Free</h3>
                                     <div className="flex items-end gap-1">
@@ -87,7 +87,7 @@ function PricingSection() {
                         </div>
 
                         <div className="relative bg-[#010207] from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-[#161311] hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
-                            <div className="space-y-6 text-white/50">
+                            <div className="space-y-6 text-white/70">
                                 <div className="space-y-3">
                                     <h3 className="text-2xl font-bold">AI Basic</h3>
                                     <div className="flex items-end gap-1">
@@ -136,7 +136,7 @@ function PricingSection() {
                     {/* Enterprise Plan */}
                     <div className="relative group">
                         <div className="relative bg-[#010207] from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-[#161311] hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
-                            <div className="space-y-6 text-white/50">
+                            <div className="space-y-6 text-white/70">
                                 <div className="space-y-3">
                                     <h3 className="text-2xl font-bold">AI Pro</h3>
                                     <div className="flex items-end gap-1">

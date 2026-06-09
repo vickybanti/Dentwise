@@ -30,18 +30,18 @@ const Hero = () => {
                             </div>
                             {/*MAIN HEADING*/}
                             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                                <span className="text-white/65 ">
+                                <span className="text-white/85 ">
                                     Your Dental
                                 </span>
                                 <br />
                                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"> questions</span>
                                 <br />
-                                <span className="text-white/65">
+                                <span className="text-white/85">
                                     answered instantly
                                 </span>
                             </h1>
                         {/*    SUBTITLE*/}
-                            <span className="text-white/35">Chat with our AI dental assistant for instant advice, book smart appointments, and get personalized care recommendations. Available 24/7, no waiting required</span>
+                            <span className="text-white/55">Chat with our AI dental assistant for instant advice, book smart appointments, and get personalized care recommendations. Available 24/7, no waiting required</span>
                         </div>
 
                     {/*    CTA BUTTONS*/}
@@ -105,11 +105,11 @@ const Hero = () => {
                                             ))
                                         }
                                     </div>
-                                    <span className="text-sm font-bold text-white/45">4.9/5</span>
+                                    <span className="text-sm font-bold text-white/55">4.9/5</span>
                                 </div>
                                 <p className="text-sm text-muted-foreground">
                                     Trusted by{" "}
-                                    <span className="font-semibold text-white/45">1,200+</span>
+                                    <span className="font-semibold text-white/55">1,200+</span>
                                 </p>
                             </div>
                         </div>
